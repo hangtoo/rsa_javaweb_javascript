@@ -9,3 +9,5 @@ http://www.justabug.net/door-1-rsa/    这个已经说得挺详细了，也解�
 
 
 http://sunxboy.iteye.com/blog/209156   本demo使用到的js就是这里提供的
+
+http://blog.csdn.net/defonds/article/details/42775183   Java 进行 RSA 加解密时不得不考虑到的那些事儿
