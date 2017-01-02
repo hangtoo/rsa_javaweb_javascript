@@ -18,6 +18,8 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.jce.provider.JCERSAPrivateKey;
 import org.bouncycastle.jce.provider.JCERSAPublicKey;
 
+import sun.misc.BASE64Encoder;
+
 
 /**
  * @author Dovahkiin
@@ -39,7 +41,11 @@ public class RSAUtils {
 			KeyPair keyPair = keyPairGen.generateKeyPair();
 
 			System.out.println(keyPair.getPrivate());
+			System.out.println((new BASE64Encoder()).encodeBuffer(keyPair.getPrivate().getEncoded()));
 			System.out.println(keyPair.getPublic());
+			System.out.println((new BASE64Encoder()).encodeBuffer(keyPair.getPublic().getEncoded()));
+			
+			
 			KEY_PAIR = keyPair;
 			return keyPair;
 		} catch (Exception e) {
